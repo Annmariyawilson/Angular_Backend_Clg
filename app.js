@@ -14,7 +14,8 @@ const __dirname = dirname(__filename);
 const app = express();
 
 app.use(cors({
-  origin: ["https://holycrosscollege.co.in:80", "http://localhost:4200"] 
+  origin: ["https://angular-clg.onrender.com", "http://localhost:4200"],
+  credentials: true
 }));
 
 app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
